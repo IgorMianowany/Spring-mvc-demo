@@ -35,9 +35,6 @@ public class CustomerController {
         if(bindingResult.hasErrors()){
             return "customer-form";
         }
-        else if (customer.getFirstName().isBlank()){
-            return "customer-confirmation-no-first-name";
-        }
         return "customer-confirmation";
     }
 }
